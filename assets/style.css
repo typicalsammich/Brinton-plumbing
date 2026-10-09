@@ -81,3 +81,16 @@ footer .footer-brand .footer-wordmark small{display:block;font-size:.62em;color:
  .header .hamb{margin-left:0;padding:8px 0 8px 6px;flex:0 0 28px;align-items:flex-end}
 }
 @media(max-width:370px){.wrap{padding-left:12px;padding-right:12px}.header{gap:4px}.header .brand img{width:42px}.header .brand>span{font-size:16px}.mobile-experience{padding-left:6px;padding-right:3px;font-size:13px}.header .hamb{flex-basis:26px}}
+/* V13: center experience badge in the space between brand and hamburger */
+@media(max-width:700px){
+ .header{position:relative;justify-content:space-between}
+ .header .brand{flex:0 1 auto}
+ .header .mobile-experience{position:absolute;left:calc(50% + 42px);transform:translateX(-50%);margin-left:0;padding-left:9px;padding-right:9px}
+ .header .hamb{margin-left:auto;position:relative;z-index:2}
+}
+@media(max-width:390px){
+ .header .brand img{width:43px}
+ .header .brand>span{font-size:16px}
+ .header .mobile-experience{left:calc(50% + 35px);font-size:13px;padding-left:6px;padding-right:5px}
+ .header .mobile-experience small{font-size:7px}
+}
