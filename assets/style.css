@@ -49,3 +49,10 @@ footer .footer-credential{display:flex;align-items:center;gap:9px;margin:7px 0;l
 footer .footer-shield{width:17px;height:20px;flex:0 0 17px;color:#e63845}
 footer .footer-phone{white-space:nowrap;display:inline-block;font-size:clamp(18px,4.3vw,23px);letter-spacing:-.025em}
 @media(max-width:700px){footer .footer-phone{font-size:clamp(18px,5.1vw,23px)}footer .footlogo{width:180px}}
+
+/* Footer logo uses the exact same logo and wordmark as the header. */
+footer .footer-brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;margin:0 0 20px;max-width:100%;color:#fff}
+footer .footer-brand img{width:100px;height:90px;object-fit:contain;flex-shrink:0;image-rendering:auto}
+footer .footer-brand>span{display:block;color:#fff;font-weight:900;line-height:1.05;font-size:clamp(22px,2vw,32px);letter-spacing:-.025em}
+footer .footer-brand>span small{display:block;color:#e23845;letter-spacing:.17em;font-size:.55em;margin-top:6px}
+@media(max-width:700px){footer .footer-brand img{width:88px;height:82px}footer .footer-brand>span{font-size:26px}}
