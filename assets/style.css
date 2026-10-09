@@ -111,3 +111,16 @@ footer .footer-brand .footer-wordmark small{display:block;font-size:.62em;color:
  .header .hamb{grid-column:4;position:relative;margin:0!important;padding:6px 0!important;flex:none;width:29px;min-width:29px;z-index:3}
 }
 @media(max-width:370px){.header{column-gap:4px}.header .brand img{width:34px}.header .brand>span{font-size:12px}.header .mobile-experience{font-size:10px!important;padding:2px 3px!important}.header .mobile-family small{font-size:6px}}
+
+/* V15: evenly distribute the mobile header's four elements */
+@media (max-width:700px){
+ .header{grid-template-columns:minmax(0,1.5fr) minmax(0,.82fr) minmax(0,.78fr) 29px!important;column-gap:clamp(9px,2.2vw,18px)!important;width:100%;}
+ .header .brand{justify-self:start;}
+ .header .mobile-experience{justify-self:center;padding-left:7px!important;padding-right:4px!important;}
+ .header .mobile-family{justify-self:center;}
+ .header .hamb{justify-self:end;}
+}
+@media(max-width:390px){
+ .header{grid-template-columns:minmax(0,1.5fr) minmax(0,.8fr) minmax(0,.72fr) 27px!important;column-gap:6px!important;}
+ .header .mobile-experience{padding-left:4px!important;padding-right:2px!important;}
+}
