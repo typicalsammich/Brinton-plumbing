@@ -35,3 +35,10 @@
 .anthem-header-button:hover,.anthem-header-button.playing{background:#b71f2b;color:#fff;border-color:#b71f2b}
 .anthem-header-button:not(.playing) .sound-wave{opacity:.3}
 @media(max-width:700px){.anthem-header-button{width:38px;height:38px;margin-left:auto}.hamb{margin-left:0}.hero .heroimage{background:linear-gradient(90deg,rgba(5,17,41,.92),rgba(6,24,54,.68)),url('/assets/american-flag-hero.svg') center center/cover!important}}
+
+/* Continuous full-bleed review ticker, populated across wide screens at first paint */
+.reviews-window{width:100%;overflow:hidden;margin-top:32px}
+.reviews-track{width:max-content;padding:0;gap:18px;animation:reviews-pass 85s linear infinite;will-change:transform}
+.review-card{width:clamp(290px,25vw,410px)}
+@keyframes reviews-pass{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 9px))}}
+@media(max-width:700px){.review-card{width:82vw}}
